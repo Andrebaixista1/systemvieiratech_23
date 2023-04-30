@@ -3,16 +3,18 @@ from time import sleep
 from datetime import datetime
 from uploading_argus import up_mailing
 
+
 def limp():
     os.system('cls')
 
+
 def main():
     while True:
-        limp()    
+        limp()
         sleep(3)
-        
+
         title = f'''
-            Sistema interativo VieiraTech - Beta 
+            Sistema interativo VieiraTech - Beta v1.3.2504
         '''
         menu = f'''           
             1. Subir base            
@@ -25,7 +27,7 @@ def main():
         op = int(input('Digite a opção desejada: '))
         if op == 0:
             limp()
-            print('Obrigado por utilizar nosso aplicativo em fase BETA')
+            print('Obrigado por utilizar nosso aplicativo em fase BETA v3.5.2504')
             sleep(3)
             limp()
             return
@@ -51,7 +53,7 @@ def main():
             print('Voltando ao menu inicial...')
             sleep(3)
             limp()
-        
+
         else:
             print('Digite uma opção valida')
             sleep(2)
