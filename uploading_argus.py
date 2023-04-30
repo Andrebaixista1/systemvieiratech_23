@@ -40,6 +40,7 @@ def abrir_janela_arquivo(op, qt_base):
                     enviar_arquivo(file_path, op)
     
     limp()
+    return
     
 def enviar_arquivo(file_path, n):
     
@@ -125,6 +126,7 @@ def enviar_arquivo(file_path, n):
     else:
         print(f'Número {n} não encontrado no dicionário.')
     sleep(5)
+    return
 
 
 def up_mailing(qt_base):
@@ -174,7 +176,7 @@ def up_mailing(qt_base):
                 elif qt_base == 2:
                     qt_base = 1
                     up_mailing(qt_base)
-                
+            return
             
         elif op == 1:
             limp()
