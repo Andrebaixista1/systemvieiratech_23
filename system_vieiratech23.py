@@ -1,4 +1,3 @@
-import pandas as pd
 import os
 from time import sleep
 from datetime import datetime
@@ -13,7 +12,7 @@ def main():
         sleep(3)
         
         title = f'''
-            Sistema interativo VieiraTech - Beta v1.3.2504
+            Sistema interativo VieiraTech - Beta 
         '''
         menu = f'''           
             1. Subir base            
@@ -26,7 +25,7 @@ def main():
         op = int(input('Digite a opção desejada: '))
         if op == 0:
             limp()
-            print('Obrigado por utilizar nosso aplicativo em fase BETA v3.5.2504')
+            print('Obrigado por utilizar nosso aplicativo em fase BETA')
             sleep(3)
             limp()
             return
