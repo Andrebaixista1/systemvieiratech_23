@@ -23,11 +23,7 @@ def main():
         '''
         print(title)
         print(menu)
-        try:
-            op = int(input('Digite a opção desejada: '))
-            break
-        except ValueError:
-            print('Digite um número inteiro válido.')
+        op = int(input('Digite a opção desejada: '))
         if op == 0:
             limp()
             print('Obrigado por utilizar nosso aplicativo em fase BETA v3.5.2504')

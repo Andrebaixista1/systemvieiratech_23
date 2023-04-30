@@ -158,14 +158,10 @@ def up_mailing(qt_base):
         
         print(title)
         print(menu)
-        try:
-            op = int(input('Digite a opção desejada: '))
-            break
-        except ValueError:
-            print('Digite um número inteiro válido.')
+        op = int(input('Digite a opção desejada: '))
         if op == 0:
             limp()
-            break
+            return
         elif op == 1001:
             limp()
             tipos = {1:'\033[32mvarias\033[0m', 2:'\033[32munica\033[0m'}
